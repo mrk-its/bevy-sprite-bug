@@ -39,11 +39,11 @@ fn setup(
     commands
         .spawn(Camera2dComponents::default())
         .spawn(sprite(0, 0, 0))
-        .with_bundle((Player,))
+        .with(Player)
         .spawn(sprite(1, 1, 0))
-        .with_bundle((Wall,))
+        .with(Wall)
         .spawn(sprite(1, 1, 1))
-        .with_bundle((Wall,))
+        .with(Wall)
     ;
 }
 
